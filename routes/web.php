@@ -11,6 +11,6 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', 'SearchController@index'); 
+Route::post('/createPost', 'SearchController@create');
+Route::get('/addData', 'SearchController@addDataToIndex');
